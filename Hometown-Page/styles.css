@@ -1,0 +1,103 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F1FAEE;  
+    }
+
+h1 {
+    font-size: 36px;
+    text-shadow: 5px 5px 5px black; 
+    border-radius: 10px;
+    border: 1px solid #1D3557;
+    background-color: #1D3557;
+    margin: 40px 70px;    
+}
+
+ h2 {
+     margin: 400px 200px;
+     padding: 5px;
+     font-size: 30px;
+     color: #A8DADC;
+     border-radius: 25px;
+     border: 5px solid #A8DADC;
+     background-color: #1D3557;      
+     }
+ 
+.hero {
+    background: url("https://as2.ftcdn.net/v2/jpg/02/82/13/01/1000_F_282130122_LfyrImpqrvnvFLT8LbJo6MhNlPptbO7m.jpg"); 
+   /* width: 720px;*/
+    height: 430px;
+    margin-top: -25px;
+    color: #A8DADC;
+    background-size: cover;
+    border-bottom: 3px ridge #1D3557;    
+    }
+.hero:hover {
+    background-image: url("https://www.suro.city/wp-content/uploads/Landing-Page-Galerie-42.jpg");
+    } 
+    
+
+.activities {    
+    width: 720px;
+    height: 430px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: column;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;       
+    }
+    
+    img {
+        height:  165px;
+        width: 165px;
+        border-radius: 50%;
+        border: 10px solid #A8DADC; 
+    }  
+    
+
+.guide {    
+    background-color: #ffff;
+    width: 720px;
+    height: 343px;
+    top: 686px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+}   
+ 
+    
+
+#Richi {
+    float: left;
+    background-color: #457B9D;
+    border-radius: 25px;
+    border-bottom: 10px solid #1D3557;
+    margin: 0px 150px;      
+}
+
+#profile {
+    float: left;
+    height: 180px;
+    width: 150px;
+    margin: 0 0 36px 10px;
+    }
+
+.text {
+    margin: 50px 15px; 
+}
