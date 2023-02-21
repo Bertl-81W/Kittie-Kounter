@@ -1,0 +1,108 @@
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+body {        
+    background-image: url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size:auto;   
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;             
+}
+
+h1 {
+    color:rgb(199, 88, 107);
+    text-shadow: 2px 2px whitesmoke;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-top: 0;
+    color: blanchedalmond;
+    text-shadow: 2px 2px rgb(199, 88, 107);   
+}
+
+.counter {
+    background-image: url("https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    margin: 325px auto;
+    width: 700px;
+    height: 500px;
+    border: 10px solid red;        
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .counter{
+      width: 80%;
+      padding: 0;
+    }
+    .button-container {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      
+    }
+  }
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    
+    .counter {        
+       /* display: flex;
+        flex-direction: column;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        /*justify-content: center;*/       
+        margin-top: 350px;
+        font-size: 20px;   
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-size: auto;
+        background-repeat: no-repeat;
+        min-height: 100%;
+    
+                 
+    }
+    .button-container {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+     
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size:25px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    margin-top: 5px; 
+    cursor: pointer;   
+}
+#add, #subtract, #reset {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#add {
+    background: rgb(237, 123, 159);
+    border: 2px solid  rgb(61, 59, 59);    
+}
+
+#subtract{
+    background: rgb(61, 59, 59);
+    border: 2px solid  rgb(237, 123, 159);
+}
+
+#reset {
+    background: rgb(200, 190, 190);
+    color: rgb(51, 42, 42);    
+}
