@@ -26,4 +26,4 @@ I had the oppurtinity to:
 
 ## Live demo
 
-View the app [live preview](https://kittie-kounter-81w.netlify.app/)
+View the app [live preview](https://js-kittie-kounter-81w.netlify.app/)
