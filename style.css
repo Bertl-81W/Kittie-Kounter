@@ -2,7 +2,9 @@
 *::before
 *::after {
     box-sizing: border-box;
-}
+} */
+
+
 body {   
     margin: 0;             
     background: linear-gradient(135deg, #FFC0CB, #FF69B4, #FF1493, #FF69B4, #FFC0CB);  /* url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") */
