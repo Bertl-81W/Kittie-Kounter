@@ -6,6 +6,8 @@ A fun Javacsript app that lets you count the smooches received from your cat(s)
 
 - Counts kisses received from your cat(s)
 - Subtracts and resets total count of kisses
+- color changing background
+- fun messages at certain number of kisses
 
 ## Technologies Used
 
