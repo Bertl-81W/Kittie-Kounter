@@ -1,13 +1,6 @@
-/*,
-*::before
-*::after {
-    box-sizing: border-box;
-} */
-
-
 body {   
     margin: 0;             
-    background: linear-gradient(135deg, #FFC0CB, #FF69B4, #FF1493, #FF69B4, #FFC0CB);  /* url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") */
+    background: linear-gradient(135deg, #FFC0CB, #FF69B4, #FF1493, #FF69B4, #FFC0CB); 
     background-size: 400% 400%; 
     animation: gradientAnimation 15s ease infinite;  
     font-family: sans-serif;
@@ -15,6 +8,24 @@ body {
     font-weight: bold;
     text-align: center;               
 }
+body.dark-mode {
+  background: black;
+  color: white;
+  border: 2px solid hotpink;   
+}
+
+#theme-toggle {
+  background: rgb(61, 59, 59);
+  color: hotpink;
+  border-radius: 5%;
+  border: 1px solid hotpink; 
+  padding: 5px 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+  margin-left: 700px; 
+  margin-top: 10px;  
+  cursor: pointer;
+}
+
 @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
@@ -25,9 +36,7 @@ body {
     100% {
       background-position: 0% 50%;
     }
-  }
-
-
+}
 h1 {
     color:rgb(199, 88, 107);
     text-shadow: 2px 2px whitesmoke;
@@ -40,28 +49,19 @@ h2 {
     color: blanchedalmond;
     text-shadow: 2px 2px rgb(199, 88, 107);   
 }
-
 .counter {
     background-image: url("https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    
-   /* margin: 325px auto;*/
-
-   width: 850px;
-   height: 450px;
-    
-   /* width: 700px;
-    height: 500px; */
+    width: 850px;
+    height: 450px;
     border: 2px solid black;
     margin-left: 200px;
-    margin-top: 35px;
+    margin-top: 15px;    
 } 
-/* Add these CSS styles to make the displayed message exciting */
-
 .message {
-    color: #FF1493; /* Pink color */
-    font-size: 36px; /* Larger font size */
-    font-weight: bold; /* Bold text */
-    animation: bounce 1s ease infinite; /* Bounce animation */
+    color: #FF1493; 
+    font-size: 36px; 
+    font-weight: bold; 
+    animation: bounce 1s ease infinite; 
   }
   
   @keyframes bounce {
@@ -76,68 +76,7 @@ h2 {
     }
   } 
 
-  
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .counter{
-      width: 400px;
-      height: 250px;
-      background-size: cover;
-      margin-right: 200px;
-    }
-    .yo-mama {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .button-container {
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-self: center;
-      
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-
-    .yo-mama {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        height: 100vh;       
-    }   
-    .counter {        
-       display: flex;
-        flex-direction: column;
-        /*background-size: contain;
-        background-repeat: no-repeat;*/
-        justify-content: center;       
-        /*margin-top: 350px;*/
-        font-size: 20px;
-    }
-    /*.container {        
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        background-size: auto;
-        background-repeat: no-repeat;
-        min-height: 100%;
-    } */
-    .button-container {
-      display: flex;
-      flex-direction: row;      
-      justify-content: center;
-      align-items: center;
-    }
-  } 
-     
-button {
+.button {
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -162,110 +101,57 @@ button {
 }
 #reset {
     background: rgb(200, 190, 190);
-    color: rgb(51, 42, 42);
-    
-}
-
-
-body {        
-    background-image: url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    background-size:auto;   
-    font-family: sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;             
-}
-
-h1 {
-    color:rgb(199, 88, 107);
-    text-shadow: 2px 2px whitesmoke;
-    margin: 15px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 45px;
-    margin-top: 0;
-    color: blanchedalmond;
-    text-shadow: 2px 2px rgb(199, 88, 107);   
-}
-
-.counter {
-    background-image: url("https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    margin: 325px auto;
-    width: 700px;
-    height: 500px;
-    border: 10px solid red;        
-} */
-
- /* @media only screen and (max-width:800px) {
-    /* For tablets: */
-     /*.counter{
-      width: 80%;
-      padding: 0;
-    }
-    .button-container {
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      
-    }
-  }
-
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    
-   /* .counter {        
-       /* display: flex;
-        flex-direction: column;*/
-      /*  background-size: contain;
-        background-repeat: no-repeat;
-        /*justify-content: center;*/       
-       /* margin-top: 350px;
-        font-size: 20px;   
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        background-size: auto;
-        background-repeat: no-repeat;
-        min-height: 100%;
-    
-                 
-    }
-    .button-container {
-      width: 75%;
-      margin: 0 auto;
-    }
-  }
-     
-button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-size:25px;
-    font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
-    margin-top: 5px; 
-    cursor: pointer;   
-}
-#add, #subtract, #reset {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-#add {
-    background: rgb(237, 123, 159);
-    border: 2px solid  rgb(61, 59, 59);    
-}
-
-#subtract{
-    background: rgb(61, 59, 59);
-    border: 2px solid  rgb(237, 123, 159);
-}
-
-#reset {
-    background: rgb(200, 190, 190);
     color: rgb(51, 42, 42);    
-}  */
+}
+#dev-info {
+  font-size: 15px;
+}
+/*Responsiveness*/
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .counter{
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    margin-right: 200px;
+  }
+  .counter-app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }    
+  .button-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+
+  .counter-app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      height: 100vh;       
+  }   
+  .counter {        
+      display: flex;
+      flex-direction: column;        
+      justify-content: center;        
+      font-size: 20px;
+  }    
+  .button-container {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;
+    align-items: center;
+  }
+} 

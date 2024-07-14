@@ -1,6 +1,23 @@
+const toggleButton = document.getElementById("theme-toggle");
+
+function updateButtonText() {
+  if (document.body.classList.contains("dark-mode")) {
+    toggleButton.textContent = "Light Mode";
+  }else{
+    toggleButton.textContent = "Dark Mode";
+  }
+}
+updateButtonText();
+
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  updateButtonText();
+});
+
 let add = document.querySelector("#add");
 let subtract = document.querySelector("#subtract");
 let reset = document.querySelector("#reset");
+
 
 console.log(add, subtract);
 
@@ -29,19 +46,6 @@ function updateMessage(message) {
   
 }
 
-
-
-//*add.addEventListener("click", function() {   *// 
-//*  let output = document.querySelector("#output");  *//
-//*  let result = Number(output.innerText) + 1;  *//
- 
-//*  if (result > 10) { *//
-//*      result = 0;  *//
-//*    }     *//
-
-//*  output.innerText = result; *//
-//*}); *//
-
 subtract.addEventListener("click", function() {
   let output = document.querySelector("#output");
   let result = Number(output.innerText) - 1; 
@@ -59,9 +63,5 @@ let result = 0;
 output.innerText = result;
 
 });
-
-
-
- 
 
 
