@@ -1,1 +1,0 @@
-A fun Javascript counter app
